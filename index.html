@@ -1,0 +1,676 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script type="module" defer src="./src/app.js"></script>
+    <script defer src="./src/lordg.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
+    <title>A.P.A ALERT</title>
+
+
+    <style>
+      @keyframes float {
+        0%, 100% {
+          transform: translateY(-30px);
+        }
+        50% {
+          transform: translateY(30px);
+        }
+      }
+
+      @keyframes float_icon {
+        0%, 100% {
+          transform: translateY(-3px);
+        }
+        50% {
+          transform: translateY(5px);
+        }
+      }
+      
+      .float-animation {
+        animation: float 3s ease-in-out infinite;
+      }
+
+      .float-animation_icon {
+        animation: float_icon 5s ease-in-out infinite;
+      }
+
+ 
+      </style>
+  </head>
+  <body data-theme="dark" class=" bg-base-300 ">
+
+
+
+
+    <div id="app" class="w-full overflow-hidden relative">
+
+      <!-- Responsive Background Blobs   max-[880px]:max-w-[200vw] max-[880px]:-translate-y-[100%] -->
+      <div class="yellow fixed bg-cover bg-center top-[15%] right-[-25%] w-[80vw] max-w-[640px] aspect-square blur-[80px] opacity-[.9] z-1 max-[1003px]:right-[-40%]" style="background-image:url(./public/yellow.png);"></div>
+      <div class="yellow fixed bg-cover bg-center top-[15%] left-[-22%] w-[80vw] max-w-[640px] aspect-square blur-[80px]  opacity-[.9] z-1  max-[1003px]:left-[-42%]" style="background-image:url(./public/orange.png);"></div>
+
+      <div class="iconblur float-animation absolute bg-cover bg-center top-0 left-1/2 w-[800px] h-[800px] opacity-[.7] blur-[20px] z-1 transform -translate-x-1/2 -translate-y-[0%]" style="background-image:url(./public/icon_black_white.png);"></div>
+
+      <!-- Main Content -->
+      <div class="min-h-screen w-full flex justify-center items-center flex-col relative z-10  mb-[170px]">
+        <div class="flex flex-col justify-center items-center text-center px-4">
+          <img src="./public/icon.png" class="w-[140px] float-animation_icon max-w-full opacity-[.7] mb-[18px]" alt="">
+          <h4 class="font-bold text-3xl leading-[15px]">A.P.A ALERTT <br> <span class="text-sm">SAFETY DEVICE TRADING</span></h4>
+          <h1 class="font-black text-7xl sm:text-7xl md:text-8xl lg:text-9xl p-0 m-0 text-shadow-2xs mb-[40px]">
+            <span class="bg-gradient-to-r from-orange-600 to-yellow-500 bg-clip-text text-transparent">ALERT</span>
+          </h1>
+
+          <h3 class="italic text-[20px] opacity-[.7]">
+            Your Safety, Our Mission
+          </h3>
+        </div>
+      </div>
+
+
+
+      <!-- why choose us> -->
+      <div class="min-h-screen flex w-full flex-col justify-center items-center mb-[170px]">
+        <h5 class="text-5xl font-bold max-[477px]:text-4xl mb-[15px]"> 
+          <span class="bg-gradient-to-r from-orange-600 to-yellow-500 bg-clip-text text-transparent">Why Choose Us?</span>
+        </h5>
+        <p class="text-md px-[20px] text-center font-semibold max-w-[700px] mb-[60px]">
+          At A.P. A ALERTT SAFETY DEVICE TRADING, we believe that your safety deserves real experience, real quality, and real service. Here's why you can trust us:
+        </p>
+
+
+        <div class="w-full mt-[30px] flex flex-row gap-[20px] justify-center flex-wrap items-center px-[10px]"> 
+          <div class="bg-ba2e-200 border border-base-content/40 min-w-[310px] p-[20px] z-[10] min-h-[200px] flex flex-col justify-start gap-3 w-full max-w-[420px] rounded-[10px]">
+            <img src="./public/trophy-dynamic-gradient.svg" class="w-[150px]" alt="">
+            <h3 class="font-black text-lg">Years of Hands-on Experience</h3>
+            <p>
+              We don’t just know fire safety — we live it everyday through real projects and real challenges.
+            </p>
+          </div>
+          <div class="bg-ba2e-200 border border-base-content/40 min-w-[310px] p-[20px] z-[10] min-h-[200px] flex flex-col justify-start gap-3 max-w-[420px] rounded-[10px]">
+            <img src="./public/setting-dynamic-gradient.svg" class="w-[150px]" alt="">
+            <h3 class="font-bold text-lg">Manufacturer & Direct Supplier</h3>
+            <p>
+              You get factory-direct prices and authentic products, because we manufacture and supply straight to you — no hidden markups.
+            </p>
+          </div>
+          <div class="bg-ba2e-200 border border-base-content/40 min-w-[310px] p-[20px] z-[10] min-h-[200px] flex flex-col justify-start gap-3 max-w-[420px] rounded-[10px]">
+            <img src="./public/puzzle-dynamic-gradient.svg" class="w-[150px]" alt="">
+            <h3 class="font-bold text-lg">Fast Help & Trusted Aftercare</h3>
+            <p>
+              When you need help, we’re just one call or message away — ready to assist even after the sale is done.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    
+
+      <!-- About Section -->
+      <div class="min-h-screen flex flex-row justify-center items-center p-[20px] gap-[20px] z-[10] mb-[190px] relative z-4 max-[920px]:flex-col">
+
+        <div class="flex-2 p-[10px] px-[50px] max-[619px]:px-[10px]">
+          <h5 class="text-5xl font-bold max-[477px]:text-4xl"> 
+            🧯 
+            <span class="bg-gradient-to-r from-orange-600 to-yellow-500 bg-clip-text text-transparent">About Us</span>
+
+          </h5>
+          <h2 class="text-2xl mb-[30px] font-semibold italic max-[477px]:text-lg">
+            Years of Dedication to Safety
+          </h2>
+       
+          <div class="space-y-4 text-justify">
+            <p>
+              <i><b>A.P.A ALERTT SAFETY DEVICE TRADING</b></i> is more than just a supplier—we are a reliable partner in ensuring safety sa balay, negosyo, ug komunidad.
+              Our team is composed of intensively trained professionals with years of experience in fire safety and industrial protection.
+              From the basics of fire prevention to advanced system installations, we provide services with integrity, precision, and care.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex-[1.29] flex flex-col justify-center items-center py-[30px]">
+          <fieldset class="fieldset bg-base-200/70 border-base-300/50 rounded-box w-sm border p-4 max-[474px]:w-xs">
+            <legend class="fieldset-legend"><h2 class="text-lg">Request for Company Profile</h2></legend>
+
+
+          <div class="flex flex-col justify-center items-center">
+            <img src="./public/profile.png" class="w-[170px] h-[250px] my-[30px] shadow-2xl" alt="">
+          </div>
+
+            <div class="join">
+              <input type="text" class="input join-item" placeholder="Email@" />
+              <button class="btn join-item">Request</button>
+            </div>
+
+            <p class="mt-[10px]">
+              <span class="font-bold">
+                Need our Company Profile? <br>
+              </span>
+              just fill out the form above and we’ll email it to you.
+            </p>
+          </fieldset>
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- OUR SERVICE Section -->
+    <div class="min-h-[20vh] flex flex-col justify-center items-center p-[20px] gap-[20px]  relative z-4 mb-[70px] max-[468px]:p-[10px]">
+      <h5 class="text-5xl font-bold max-[477px]:text-4xl"> 
+        <span class="bg-gradient-to-r from-orange-600 to-yellow-500 bg-clip-text text-transparent">OUR SERVICES </span>
+      </h5>
+      <p class="text-md px-[20px] text-center font-semibold max-w-[700px] mb-[20px]">
+        We specialize in a wide range of fire safety systems and solutions, which include:
+      </p>
+    </div> 
+
+    <section class="scroll-content gap-[20px] p-[10px]">
+      <aside class="max-[704px]:mb-[20px] relative min-w-[372px] flex flex-col justify-center items-center min-h-[226px] card bg-cover bg-bottom"> 
+        <div class="absolute top-0 left-0 w-full h-full opacity-[.6] blur-[19px] bg-base-200 z-[9]"></div>
+        <div class="barnds relative p-[20px] z-[10] min-h-[70px] w-full card flex flex-col justify-center items-center">
+        </div>
+      </aside>
+      <aside class="max-[704px]:mb-[20px] relative min-w-[372px] flex flex-col justify-center items-center min-h-[226px] card bg-cover bg-top" style="background-image: url(https://i.pinimg.com/736x/d4/e2/02/d4e20292c2723b393ea9b3a254e5ae58.jpg);">
+        <div class="absolute top-0 left-0 w-full h-full opacity-[.6] blur-[19px] bg-base-200 z-[9]"></div>
+          <div class="barnds relative p-[20px] z-[10] min-h-[70px] w-full card flex flex-col justify-center items-center">
+            <h1 class="text-2xl font-extrabold z-[9] text-center">
+              BRAND NEW FIRE EXT.
+            </h1>
+          </div>
+      </aside>
+      <aside class="max-[704px]:mb-[20px] relative min-w-[372px] flex flex-col justify-center items-center min-h-[226px] card bg-cover bg-top" style="background-image: url(./public/refill.png);">
+        <div class="absolute top-0 left-0 w-full h-full opacity-[.6] blur-[19px] bg-base-200 z-[9]"></div>
+        <div class="barnds relative p-[20px] z-[10] min-h-[70px] w-full card flex flex-col justify-center items-center">
+          <h1 class="text-2xl font-extrabold z-[9] text-center">
+            REFILL SERVICE
+          </h1>
+        </div>
+      </aside>
+      <aside class="max-[704px]:mb-[20px] relative min-w-[372px] flex flex-col justify-center items-center min-h-[226px] card bg-cover bg-right" style="background-image: url(./public/items.png);">
+        <div class="absolute top-0 left-0 w-full h-full opacity-[.6] blur-[19px] bg-base-200 z-[9]"></div>
+        <div class="barnds relative p-[20px] z-[10] min-h-[70px] w-full card flex flex-col justify-center items-center">
+          <h1 class="text-2xl font-extrabold z-[9] text-center">
+            FIRE SAFETY DEVICES
+          </h1>
+        </div>
+      </aside>
+      <aside class="max-[704px]:mb-[20px] relative min-w-[372px] flex flex-col justify-center items-center min-h-[226px] card bg-cover bg-top" style="background-image: url(./public/Regulation-4-standpipe-testing-2.png);"> 
+        <div class="absolute top-0 left-0 w-full h-full opacity-[.6] blur-[19px] bg-base-200 z-[9]"></div>
+        <div class="barnds relative p-[20px] z-[10] min-h-[70px] w-full card flex flex-col justify-center items-center">
+          <h1 class="text-2xl font-extrabold z-[9] text-center">
+            STANDPIPE SYSTEMS
+          </h1>
+        </div>
+      </aside>
+      <aside class="max-[704px]:mb-[20px] relative min-w-[372px] flex flex-col justify-center items-center min-h-[226px] card bg-cover bg-left" style="background-image: url(./public/dormont_flexible_gas_hose_IMG_6558.jpg);"> 
+        <div class="absolute top-0 left-0 w-full h-full opacity-[.6] blur-[19px] bg-base-200 z-[9]"></div>
+        <div class="barnds relative p-[20px] z-[10] min-h-[70px] w-full card flex flex-col justify-center items-center">
+          <h1 class="text-2xl font-extrabold z-[9] text-center">
+            GAS PIPELINE SYSTEMS
+          </h1>
+        </div>
+      </aside>
+      <aside class="max-[704px]:mb-[20px] relative min-w-[372px] flex flex-col justify-center items-center min-h-[226px] card bg-cover bg-top" style="background-image: url(./public/smoke-detector.jpg);"> 
+        <div class="absolute top-0 left-0 w-full h-full opacity-[.6] blur-[19px] bg-base-200 z-[9]"></div>
+        <div class="barnds relative p-[20px] z-[10] min-h-[70px] w-full card flex flex-col justify-center items-center">
+          <h1 class="text-2xl font-extrabold z-[9] text-center">
+            FDAS
+          </h1>
+        </div>
+      </aside>
+      <aside class="max-[704px]:mb-[20px] relative min-w-[372px] flex flex-col justify-center items-center min-h-[226px] card bg-cover bg-top" style="background-image: url(./public/Fire-Sprinkler-System.jpg);"> 
+        <div class="absolute top-0 left-0 w-full h-full opacity-[.6] blur-[19px] bg-base-200 z-[9]"></div>
+        <div class="barnds relative p-[20px] z-[10] min-h-[70px] w-full card flex flex-col justify-center items-center">
+          <h1 class="text-2xl font-extrabold z-[9] text-center">
+            AFSS
+          </h1>
+        </div>
+      </aside>
+      <aside class="max-[704px]:mb-[20px] relative min-w-[372px] flex flex-col justify-center items-center min-h-[226px] card bg-cover bg-bottom" style="background-image: url(./public/sddefault.jpg);"> 
+        <div class="absolute top-0 left-0 w-full h-full opacity-[.6] blur-[19px] bg-base-200 z-[9]"></div>
+        <div class="barnds relative p-[20px] z-[10] min-h-[70px] w-full card flex flex-col justify-center items-center">
+          <h1 class="text-2xl font-extrabold z-[9] text-center">
+            AKSS
+          </h1>
+        </div>
+      </aside>
+
+      <aside class="max-[704px]:mb-[20px] relative min-w-[372px] flex flex-col justify-center items-center min-h-[226px] card bg-cover bg-bottom"> 
+        <div class="absolute top-0 left-0 w-full h-full opacity-[.6] blur-[19px] bg-base-200 z-[9]"></div>
+        <div class="barnds relative p-[20px] z-[10] min-h-[70px] w-full card flex flex-col justify-center items-center">
+        </div>
+      </aside>
+
+    </section>
+
+
+    <!-- Products We Offer -->
+    <div class="min-h-[40vh] flex flex-col justify-center items-center p-[20px] gap-[20px] mt-[120px] overflow-x-hidden  relative z-4 mb-[70px] max-[468px]:p-[10px]">
+      <h5 class="text-5xl font-bold max-[477px]:text-4xl text-center"> 
+        <span class="bg-gradient-to-r from-orange-600 to-yellow-500 bg-clip-text text-center text-transparent">Products We Offer </span>
+      </h5>
+      <p class="text-md px-[20px] text-center font-semibold max-w-[700px] mb-[20px]">
+        We manufacture and supply high-quality fire safety equipment including:
+      </p>
+        <div class="min-h-[50vh] flex flex-row flex-wrap justify-center items-center gap-[20px] p-[10px]">
+
+              <div class="min-w-[450px] border border-base-content/10 min-h-[400px] card bg-base-200/50 p-[10px] max-[510px]:min-w-[100%] max-[510px]:w-full">
+
+                <h1 class="p-[10px] font-bold max-[510px]:scale-[.8]">
+                  EMPTY FIRE EXTINGUISHER CYLINDER
+                </h1>
+
+                <div class="overflow-x-auto rounded-box border border-base-content/5 bg-base-100 max-[510px]:scale-[.8]">
+                <table class="table">
+                  <!-- head -->
+                  <thead>
+                    <tr>
+                      <th></th>
+                      <th>Size</th>
+                      <th>Type</th>
+                      <th>Color</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <!-- row 1 -->
+                    <tr>
+                      <th>1</th>
+                      <td>3 LBS</td>
+                      <td>CYLINDER</td>
+                      <td>Red</td>
+                    </tr>
+                    <!-- row 2 -->
+                    <tr>
+                      <th>2</th>
+                      <td>5 LBS</td>
+                      <td>CYLINDER</td>
+                      <td>Red</td>
+                    </tr>
+                    <!-- row 3 -->
+                    <tr>
+                      <th>3</th>
+                      <td>10 LBS</td>
+                      <td>CYLINDER</td>
+                      <td>Red</td>
+                    </tr>
+                    <!-- row 4 -->
+                    <tr>
+                      <th>4</th>
+                      <td>20 LBS</td>
+                      <td>CYLINDER</td>
+                      <td>Red</td>
+                    </tr>
+                    <!-- row 5 -->
+                    <tr>
+                      <th>5</th>
+                      <td>10 LBS</td>
+                      <td>CYLINDER</td>
+                      <td>Green</td>
+                    </tr>
+                    <!-- row 6 -->
+                    <tr>
+                      <th>6</th>
+                      <td>10 LBS</td>
+                      <td>CYLINDER</td>
+                      <td>Green</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              </div>
+        
+              <div class="min-w-[450px] border border-base-content/10 min-h-[400px] card bg-base-200/50 p-[10px] max-[510px]:min-w-[100%] max-[510px]:w-full">
+
+                <h1 class="p-[10px] font-bold max-[510px]:scale-[.8]">
+                  FIRE ALARM BELL
+                </h1>
+
+                <div class="overflow-x-auto rounded-box border border-base-content/5 bg-base-100 max-[510px]:scale-[.8]">
+                <table class="table">
+                  <!-- head -->
+                  <thead>
+                    <tr>
+                      <th></th>
+                      <th>Size</th>
+                      <th>Size in mm</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <!-- row 1 -->
+                    <tr>
+                      <th>1</th>
+                      <td>6"</td>
+                      <td>150 MM</td>
+                    </tr>
+                    <!-- row 2 -->
+                    <tr>
+                      <th>2</th>
+                      <td>8"</td>
+                      <td>200MM</td>
+                    </tr>
+                    <!-- row 3 -->
+                    <tr>
+                      <th>3</th>
+                      <td>10"</td>
+                      <td>250MM</td>
+                    </tr>
+                    <!-- row 4 -->
+                    <tr>
+                      <th>4</th>
+                      <td>12"</td>
+                      <td>300MM</td>
+                    </tr>
+    
+                  </tbody>
+                </table>
+              </div>
+              </div>
+
+              <div class="min-w-[450px] border border-base-content/10 min-h-[400px] card bg-base-200/50 p-[10px] max-[510px]:min-w-[100%] max-[510px]:w-full">
+
+                <h1 class="p-[10px] font-bold max-[510px]:scale-[.8]">
+                  FIRE EXTINGUISHER PARTS
+                </h1>
+
+                <div class="overflow-x-auto rounded-box border border-base-content/5 bg-base-100 max-[510px]:scale-[.8]">
+                <table class="table">
+                  <!-- head -->
+                  <thead>
+                    <tr>
+                      <th></th>
+                      <th>Parts</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <!-- row 1 -->
+                    <tr>
+                      <th>1</th>
+                      <td>HOSE 10LBS</td>
+                    </tr>
+                    <!-- row 2 -->
+                    <tr>
+                      <th>2</th>
+                      <td>HOSE 20LBS</td>
+                    </tr>
+                    <!-- row 3 -->
+                    <tr>
+                      <th>3</th>
+                      <td>HEAD VALVE</td>
+                    </tr>
+                    <!-- row 4 -->
+                    <tr>
+                      <th>4</th>
+                      <td>PLASTIC SEAL</td>
+                    </tr>
+                    <!-- row 5 -->
+                    <tr>
+                      <th>5</th>
+                      <td>PRESSURE GAUGE</td>
+                    </tr>
+                    <!-- row 6 -->
+                    <tr>
+                      <th>5</th>
+                      <td>ORING</td>
+                    </tr>
+    
+                  </tbody>
+                </table>
+              </div>
+              </div>
+
+              <div class="min-w-[450px] border border-base-content/10 min-h-[400px] card bg-base-200/50 p-[10px] max-[510px]:min-w-[100%] max-[510px]:w-full">
+
+                <h1 class="p-[10px] font-bold max-[510px]:scale-[.8]">
+                  SMOKE DETECTOR
+                </h1>
+
+                <div class="overflow-x-auto rounded-box border border-base-content/5 bg-base-100 max-[510px]:scale-[.8]">
+                <table class="table">
+                  <!-- head -->
+                  <thead>
+                    <tr>
+                      <th></th>
+                      <th>Model</th>
+                      <th>Type</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <!-- row 1 -->
+                    <tr>
+                      <th>1</th>
+                      <td>SMOKE</td>
+                      <td>DETECTOR 102</td>
+                    </tr>
+                    <!-- row 2 -->
+                    <tr>
+                      <th>2</th>
+                      <td>SMOKE</td>
+                      <td>ALARM 126</td>
+                    </tr>
+                    <!-- row 3 -->
+                    <tr>
+                      <th>3</th>
+                      <td>SMOKE</td>
+                      <td>ALARM 127</td>
+                    </tr>   
+                  </tbody>
+                </table>
+              </div>
+              </div>
+
+              <div class="min-w-[450px] border border-base-content/10 min-h-[400px] card bg-base-200/50 p-[10px] max-[510px]:min-w-[100%] max-[510px]:w-full">
+
+                <h1 class="p-[10px] font-bold max-[510px]:scale-[.8]">
+                  FIRE HOSE & ACCESSORIES
+                </h1>
+
+                <div class="overflow-x-auto rounded-box border border-base-content/5 bg-base-100 max-[510px]:scale-[.8]">
+                <table class="table">
+                  <!-- head -->
+                  <thead>
+                    <tr>
+                      <th></th>
+                      <th>Accessories</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <!-- row 1 -->
+                    <tr>
+                      <th>1</th>
+                      <td>FIRE HOSE 50FT. SINGLE /DOUBLE JACKET</td>
+                    </tr>
+                    <!-- row 2 -->
+                    <tr>
+                      <th>2</th>
+                      <td>FIRE HOSE 100FT. SINGLE /DOUBLE JACKET</td>
+                    </tr>
+                    <!-- row 3 -->
+                    <tr>
+                      <th>3</th>
+                      <td>ANGLE VALVE * FOG NOZZLE</td>
+                    </tr>
+                    <!-- row 4 -->
+                    <tr>
+                      <th>4</th>
+                      <td>LOCK NIPPLE</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              </div>
+
+              <div class="min-w-[450px] border border-base-content/10 min-h-[400px] card bg-base-200/50 p-[10px] max-[510px]:min-w-[100%] max-[510px]:w-full">
+
+                <h1 class="p-[10px] font-bold max-[510px]:scale-[.8]">
+                  EXIT SIGN
+                </h1>
+
+                <div class="overflow-x-auto rounded-box border border-base-content/5 bg-base-100 max-[510px]:scale-[.8]">
+                <table class="table">
+                  <!-- head -->
+                  <thead>
+                    <tr>
+                      <th></th>
+                      <th>Product Name</th>
+                      <th>Size</th>
+                      <th>Type</th>
+                      <th>Color</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <!-- row 1 -->
+                    <tr>
+                      <th>1</th>
+                      <td>LUMINOUS</td>
+                      <td>6x14</td>
+                      <td>EXIT SIGN</td>
+                      <td>RED</td>
+                    </tr>
+                    <!-- row 2 -->
+                    <tr>
+                      <th>2</th>
+                      <td>LUMINOUS</td>
+                      <td>6x14</td>
+                      <td>EXIT SIGN</td>
+                      <td>GREEN</td>
+                    </tr>
+                    <!-- row 3 -->
+                    <tr>
+                      <th>3</th>
+                      <td>LUMINOUS</td>
+                      <td>6x14</td>
+                      <td>FIRE EXIT</td>
+                      <td>RED</td>
+                    </tr>  
+                    <!-- row 4 -->
+                    <tr>
+                      <th>4</th>
+                      <td>LUMINOUS</td>
+                      <td>6x14</td>
+                      <td>FIRE EXIT</td>
+                      <td>GREEN</td>
+                    </tr>    
+                  </tbody>
+                </table>
+              </div>
+              </div>
+
+              <div class="min-w-[450px] border border-base-content/10 min-h-[400px] card bg-base-200/50 p-[10px] max-[510px]:min-w-[100%] max-[510px]:w-full">
+
+                <h1 class="p-[10px] font-bold max-[510px]:scale-[.8]">
+                  EMERGENCY LIGHT & EXIT SIGNS
+                </h1>
+
+                <div class="overflow-x-auto rounded-box border border-base-content/5 bg-base-100 max-[510px]:scale-[.8]">
+                <table class="table">
+                  <!-- head -->
+                  <thead>
+                    <tr>
+                      <th></th>
+                      <th>Accessories</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <!-- row 1 -->
+                    <tr>
+                      <th>1</th>
+                      <td>6V LED EMERGENCY LIGHT</td>
+                    </tr>
+                    <!-- row 2 -->
+                    <tr>
+                      <th>2</th>
+                      <td>12V LED EMERGENCY LIGHT</td>
+                    </tr>
+                    <!-- row 3 -->
+                    <tr>
+                      <th>3</th>
+                      <td>EXIT SIGN SINGLE FACE & DOUBLE FACE</td>
+                    </tr>
+                    <!-- row 4 -->
+                    <tr>
+                      <th>4</th>
+                      <td>EXIT SIGN (SUSPENDED, ACRYLIC MATERIAL)</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              </div>
+              
+              <div class="min-w-[450px] border border-base-content/10 min-h-[400px] card bg-base-200/50 p-[10px] max-[510px]:min-w-[100%] max-[510px]:w-full">
+
+                <h1 class="p-[10px] font-bold max-[510px]:scale-[.8]">
+                  FIREMAN’S SUIT
+                </h1>
+
+                <div class="overflow-x-auto rounded-box border border-base-content/5 bg-base-100 max-[510px]:scale-[.8]">
+                <table class="table">
+                  <!-- head -->
+                  <thead>
+                    <tr>
+                      <th></th>
+                      <th>Accessories</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <!-- row 1 -->
+                    <tr>
+                      <th>1</th>
+                      <td>FIREMAN’S COAT TROUSER</td>
+                    </tr>
+                    <!-- row 2 -->
+                    <tr>
+                      <th>2</th>
+                      <td>BOOTS</td>
+                    </tr>
+                    <!-- row 3 -->
+                    <tr>
+                      <th>3</th>
+                      <td>HELMET</td>
+                    </tr>
+                    <!-- row 4 -->
+                    <tr>
+                      <th>4</th>
+                      <td>GLOVES</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              </div>
+
+        </div>
+    </div>
+
+
+
+
+    <div class="min-h-[100vh] flex flex-col justify-center items-center p-[20px] gap-[20px] mt-[120px] overflow-x-hidden  relative z-4 mb-[70px] max-[468px]:p-[10px]">
+        <h5 class="text-5xl font-bold max-[477px]:text-4xl text-center"> 
+          <span class="bg-gradient-to-r from-orange-600 to-yellow-500 bg-clip-text text-center text-transparent">Sample Projects / Portfolio</span>
+        </h5>
+        <p class="text-md px-[20px] text-center font-semibold max-w-[700px] mb-[20px]">
+          Here's a glimpse of our completed works:
+        </p>
+    </div>
+
+
+    <div class="scroll_anime_hor">
+      <div class="inline-block p-[10px] min-w-[180px] font-bold text-md opacity-[.7] mx-[20px] border text-center bg-ba2e-200 border border-base-content/40 card">Another Row 1</div>
+      <div class="inline-block p-[10px] min-w-[180px] font-bold text-md opacity-[.7] mx-[20px] border text-center bg-ba2e-200 border border-base-content/40 card">Another Row 2</div>
+    </div>
+
+
+
+
+
+    
+  </body>
+</html>
+
+
+
+
+ 
