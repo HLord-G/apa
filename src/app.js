@@ -10,7 +10,7 @@ import './../public/lordg.js'
 function templates_a(img,acta,actb,actc){
     return `
     <div class="flex-shrink-0 w-full h-[90vh] bg-base-300 flex card items-center justify-center snap-start relative overflow-hidden">
-        <img src="./public/stores/${img}.png" class="absolute object-cover top-0 left-0 h-full w-full bg-cover bg-center" alt="">
+        <img src="../public/stores/${img}.png" class="absolute object-cover top-0 left-0 h-full w-full bg-cover bg-center" alt="">
         
         <div class="absolute top-[3%] left-[3%] badge badge-neutral font-bold">${acta}</div>
       
