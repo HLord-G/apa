@@ -3,13 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
     <script type="module" defer src="./src/app.js"></script>
     <script defer src="./src/lordg.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
     <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
     <title>A.P.A ALERT</title>
+
+    <script>
+      (function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="AmfCP1AUXRcgh6HCu1XwW";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
+    </script>
+
 
 
     <style>
@@ -110,7 +115,7 @@
     
 
       <!-- About Section -->
-      <div class="min-h-screen flex flex-row justify-center items-center p-[20px] gap-[20px] z-[10] mb-[190px] relative z-4 max-[920px]:flex-col">
+      <div id="about" class="min-h-screen flex flex-row justify-center items-center p-[20px] gap-[20px] z-[10] mb-[190px] relative z-4 max-[920px]:flex-col">
 
         <div class="flex-2 p-[10px] px-[50px] max-[619px]:px-[10px]">
           <h5 class="text-5xl font-bold max-[477px]:text-4xl"> 
@@ -169,7 +174,7 @@
     </div> 
 
     <section class="scroll-content gap-[20px] p-[10px]">
-      <aside class="max-[704px]:mb-[20px] relative min-w-[372px] flex flex-col justify-center items-center min-h-[226px] card bg-cover bg-bottom"> 
+      <aside class="max-[704px]:mb-[20px] relative min-w-[272px] flex flex-col justify-center items-center min-h-[226px] card bg-cover bg-bottom"> 
         <div class="absolute top-0 left-0 w-full h-full opacity-[.6] blur-[19px] bg-base-200 z-[9]"></div>
         <div class="barnds relative p-[20px] z-[10] min-h-[70px] w-full card flex flex-col justify-center items-center">
         </div>
@@ -239,7 +244,7 @@
         </div>
       </aside>
 
-      <aside class="max-[704px]:mb-[20px] relative min-w-[372px] flex flex-col justify-center items-center min-h-[226px] card bg-cover bg-bottom"> 
+      <aside class="max-[704px]:mb-[20px] relative min-w-[272px] flex flex-col justify-center items-center min-h-[226px] card bg-cover bg-bottom"> 
         <div class="absolute top-0 left-0 w-full h-full opacity-[.6] blur-[19px] bg-base-200 z-[9]"></div>
         <div class="barnds relative p-[20px] z-[10] min-h-[70px] w-full card flex flex-col justify-center items-center">
         </div>
@@ -651,23 +656,209 @@
         <h5 class="text-5xl font-bold max-[477px]:text-4xl text-center"> 
           <span class="bg-gradient-to-r from-orange-600 to-yellow-500 bg-clip-text text-center text-transparent">Sample Projects / Portfolio</span>
         </h5>
-        <p class="text-md px-[20px] text-center font-semibold max-w-[700px] mb-[20px]">
+        <p class="text-md px-[20px] text-center font-semibold max-w-[700px] mb-[60px]">
           Here's a glimpse of our completed works:
         </p>
+ 
+
+        <div class="min-h-[80vh] max-w-[980px] w-full border relative p-4 overflow-hidden card bg-base-300/40 border-base-content/20">
+          <div id="scrollContainer" class="flex overflow-x-auto scroll-smooth snap-x snap-mandatory space-x-4">
+             
+          </div>
+      
+          <div class="absolute top-1/2 left-2 transform -translate-y-1/2">
+              <button onclick="scrollPrev()" class="btn px-4 py-2 border-none  shadow bg-base-300/30">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="currentColor"><path d="M440-240 200-480l240-240 56 56-183 184 183 184-56 56Zm264 0L464-480l240-240 56 56-183 184 183 184-56 56Z"/></svg>
+              </button>
+          </div>
+          <div class="absolute top-1/2 right-2 transform -translate-y-1/2">
+              <button onclick="scrollNext()" class="btn px-4 py-2 border-none  shadow bg-base-300/30">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="currentColor"><path d="M383-480 200-664l56-56 240 240-240 240-56-56 183-184Zm264 0L464-664l56-56 240 240-240 240-56-56 183-184Z"/></svg>
+              </button>
+          </div>
+      </div>
+      
+      <script>
+          const container = document.getElementById('scrollContainer');
+      
+          function scrollNext() {
+              container.scrollBy({ left: container.clientWidth, behavior: 'smooth' });
+          }
+      
+          function scrollPrev() {
+              container.scrollBy({ left: -container.clientWidth, behavior: 'smooth' });
+          }
+      </script>
+      
+      <div class="scroll_anime_hor mask-l-to-[80%]">
+        <div class="inline-block p-[10px] min-w-[180px] font-black text-lg mx-[20px] text-center border border-base-content/40 card">WOOSOO KOREAN RESTAURANT</div>
+        <div class="inline-block p-[10px] min-w-[180px] font-black text-lg mx-[20px] text-center border border-base-content/40 card">MACKGAB CONSTRUCTION</div>
+        <div class="inline-block p-[10px] min-w-[180px] font-black text-lg mx-[20px] text-center border border-base-content/40 card">BL & SG RESTAURANT</div>
+        <div class="inline-block p-[10px] min-w-[180px] font-black text-lg mx-[20px] text-center border border-base-content/40 card">PEDRO’S KITCHENETTE</div>
+        <div class="inline-block p-[10px] min-w-[180px] font-black text-lg mx-[20px] text-center border border-base-content/40 card">SIARGAO DEL PALMAS</div>
+        <div class="inline-block p-[10px] min-w-[180px] font-black text-lg mx-[20px] text-center border border-base-content/40 card">MANDARIN TEA GARDEN</div>
+        <div class="inline-block p-[10px] min-w-[180px] font-black text-lg mx-[20px] text-center border border-base-content/40 card">YOSHI MEAT-SU</div>
+        <div class="inline-block p-[10px] min-w-[180px] font-black text-lg mx-[20px] text-center border border-base-content/40 card">828 BUILDING</div>
+        <div class="inline-block p-[10px] min-w-[180px] font-black text-lg mx-[20px] text-center border border-base-content/40 card">LECHON HOUSE</div>
+        <div class="inline-block p-[10px] min-w-[180px] font-black text-lg mx-[20px] text-center border border-base-content/40 card">MCDONALD’S ORORAMA</div>
+      </div>
+
     </div>
 
 
-    <div class="scroll_anime_hor">
-      <div class="inline-block p-[10px] min-w-[180px] font-bold text-md opacity-[.7] mx-[20px] border text-center bg-ba2e-200 border border-base-content/40 card">Another Row 1</div>
-      <div class="inline-block p-[10px] min-w-[180px] font-bold text-md opacity-[.7] mx-[20px] border text-center bg-ba2e-200 border border-base-content/40 card">Another Row 2</div>
-    </div>
 
 
 
 
+
+    <footer class="min-h-[100vh] relative z-[99] bg-base-300 flex flex-col justify-between items-center">
+        <div class="text-8xl mt-[20px] font-bold text-center py-[10px] max-[704px]:text-7xl max-[514px]:text-6xl max-[398px]:text-5xl">
+          <h1>A.P.A ALERTT</h1>
+        </div>
+
+        <div class="min-h-[30vh] w-full mt-[80px] flex px-[50px] flex-row justify-between items-center max-[768px]:justify-start max-[768px]:items-start  max-[768px]:flex-col">
+            <div class="space-y-2">
+              <h1 class="text-lg font-bold">Contact Us Today</h1>
+              <p>Want to inquire, request a quote, or book a service?</p>
+
+              <p class="italic">alerttsafetydevice@gmail.com</p>
+              <p class="italic font-semibold"> Open Hours: Monday–Saturday, 8AM–5PM</p>
+            </div>
+            <div class="text-lg flex flex-col items-end max-[768px]:mt-[120px]">
+              <a class="hover:text-yellow-600" href="#home">Home</a>
+              <a class="hover:text-yellow-600" href="#about">About</a>
+              <a class="hover:text-yellow-600" href="#services">Services</a>
+              <a class="hover:text-yellow-600" href="#products">Products</a>
+              <a class="hover:text-yellow-600" href="#projects">Projects</a>
+            </div>
+        </div>
+
+        <div class="w-full p-[20px] px-[40px] mt-[80px]">
+          <div class="flex flex-row justify-center items-center"> 
+            <div class=" w-[80%]  border-t-2 border-base-content/40"></div>
+          </div>
+
+        </div>
+    </footer>
 
     
   </body>
+
+
+
+<script>
+
+
+function templates_a(img,acta,actb,actc){
+  return `
+  <div class="flex-shrink-0 w-full h-[90vh] bg-base-300 flex card items-center justify-center snap-start relative overflow-hidden">
+      <img src="./public/stores/${img}.png" class="absolute object-cover top-0 left-0 h-full w-full bg-cover bg-center" alt="">
+      
+      <div class="absolute top-[3%] left-[3%] badge badge-neutral font-bold">${acta}</div>
+    
+      <div class="absolute bottom-[0%] left-[0%] px-[25px] py-[10px] bg-base-300">
+          <h1 class="text-lg font-bold">${actb}</h1>
+          <p class="italic opacity-[.7]">${actc}</p>
+      </div>
+  </div>
+  `
+}
+
+
+ let store_achivements = [
+  {
+    img:"12",
+    build:"GAS PIPELINE",
+    store:"MCDONALD’S ORORAMA",
+    location:"RORAMA COGON CDO"
+  },
+  {
+    img:"1",
+    build:"AKSS",
+    store:"WOOSOO KOREAN RESTAURANT",
+    location:"SM CITY BUTUAN"
+  },
+  {
+    img:"2",
+    build:"AKSS",
+    store:"MANDARIN TEA GARDEN",
+    location:"ORORAMA COGON CDO"
+  },
+  {
+    img:"3",
+    build:"AKSS",
+    store:"MACKGAB CONSTRUCTION SUPPLY",
+    location:"BUTUAN CITY"
+  },
+  {
+    img:"4",
+    build:"AKSS",
+    store:"BL & SG RESTAURANT",
+    location:"ROBINSONS BUTUAN"
+  },
+  {
+    img:"5",
+    build:"AKSS",
+    store:"PEDRO’S KITCHENETTE",
+    location:"LIMKETKAI MALL CDO"
+  },
+  {
+    img:"6",
+    build:"GAS PIPELINE",
+    store:"SIARGAO DEL PALMAS",
+    location:"SM CITY BUTUAN"
+  },
+  {
+    img:"7",
+    build:"GAS PIPELINE",
+    store:"MANDARIN TEA GARDEN",
+    location:"SM CITY BUTUAN"
+  },
+  {
+    img:"8",
+    build:"GAS PIPELINE",
+    store:"YOSHI MEAT-SU",
+    location:"AYALA MALL CDO"
+  },
+  {
+    img:"9",
+    build:"GAS PIPELINE",
+    store:"828 BUILDING",
+    location:"CDO"
+  },
+  {
+    img:"10",
+    build:"GAS PIPELINE",
+    store:"LECHON HOUSE",
+    location:"SM DOWNTOWN CDO"
+  },
+  {
+    img:"11",
+    build:"GAS PIPELINE",
+    store:"MANDARIN TEA GARDEN",
+    location:"RORAMA COGON CDO"
+  }
+ ]
+
+ 
+ for (let index = 0; index < store_achivements.length; index++) {
+  
+  $("#scrollContainer").append(templates_a(
+    store_achivements[index].img,
+    store_achivements[index].build,
+    store_achivements[index].store,
+    store_achivements[index].location
+  ))
+  
+ }
+
+
+
+
+</script>
+
+
+
 </html>
 
 

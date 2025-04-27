@@ -8,7 +8,7 @@
    .scroll_anime_hor .scroller {
      display: inline-block;
      white-space: nowrap;
-     animation: scroll-left 20s linear infinite;
+     animation: scroll-left 120s linear infinite;
    }
    @keyframes scroll-left {
      0% {
@@ -95,5 +95,13 @@
         scrollContent.style.transform = `translateX(-${scrollOffset}px)`;
       }
     });
+  });
+  
+
+
+  document.addEventListener('gesturestart', function (e) {
+    e.preventDefault();
+
+    alert("oh halap-halap na dili na ma klaro?")
   });
   
