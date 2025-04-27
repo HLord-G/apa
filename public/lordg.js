@@ -102,6 +102,5 @@
   document.addEventListener('gesturestart', function (e) {
     e.preventDefault();
 
-    alert("oh halap-halap na dili na ma klaro?")
   });
   
