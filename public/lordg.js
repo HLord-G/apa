@@ -1,4 +1,3 @@
- // 1. Inject animation + layout styles
  const style = document.createElement('style');
  style.innerHTML = `
    .scroll_anime_hor {
